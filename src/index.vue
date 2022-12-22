@@ -82,7 +82,6 @@ export default {
       let offsetY, touch;
       touch = ev.touches[0];
       offsetY = (touch.screenY - self.startY) / 2;
-      console.log('pulldown', self.down, offsetY, len);
       if (self.down && self.startPageY == 0 && offsetY > 0) {
         ev.preventDefault();
         if (offsetY > len) {
@@ -109,7 +108,6 @@ export default {
       if (self.down && self.pullFlag == 1) {
         self.pullDownCls = 'pullDown loading';
         self.pullDownState = lableDown.loading;
-        // console.log('loadData');
         self.addNew().then(function() {
           self.pullDownEl.style.webkitTransitionDuration = '0.5s';
           self.pullDownEl.style.height = 0;
