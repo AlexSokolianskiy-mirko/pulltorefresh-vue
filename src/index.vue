@@ -20,16 +20,16 @@ const scrollCls = 'scroll',
   pullUpCls = 'pullUp',
   pullUpLabelCls = 'pullUpLabel';
 const lableUp = {
-  initial: '上拉加载更多',
-  suspend: '松开加载更多',
-  loading: '加载中',
-  complete: '加载完成',
+  initial: 'Updating',
+  suspend: 'Suspend',
+  loading: 'Loading',
+  complete: 'Finished',
 };
 const lableDown = {
-  initial: '下拉刷新',
-  suspend: '松开刷新',
-  loading: '刷新中',
-  complete: '刷新完成',
+  initial: 'Updating',
+  suspend: 'Suspend',
+  loading: 'Loading',
+  complete: 'Finished',
 };
 export default {
   name: 'PullToRefresh',
